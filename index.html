@@ -1,0 +1,33 @@
+!<DOCTYPE html>
+  <html>
+    <head>
+
+    </head>
+    <title> Fish Riddle Root </title>
+    <body>
+      <div id="heading">
+        Fish Riddle root is a new invasive species of root that is destroying native fish populations
+        <ul>
+          <li class="Fish">Beta Fish</li>
+          <li class="Fish">Beta Fish</li>
+          <li class="Fish">Beta Fish</li>
+          <li class="Fish">Beta Fish</li>
+        </ul>
+      </div>
+
+      <input id="clicker" type="button" >
+
+      <script>
+
+        var headingElement = document.getElementByID("heading");
+        headingElement.innerHTML = "Here is some text";
+
+        var nameElements = document.getElementsByClassName("Fish")
+        console.log(nameElements[2]);
+        for (let i = 0; i < nameElements.length; i++) {
+          nameElements[i].innerHTML = "cat";
+        }
+
+      </script>
+    </body>
+  </html>
